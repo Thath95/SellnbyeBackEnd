@@ -25,6 +25,9 @@ connection.once('open', function () {
 });
 
 require('./routes/api/BookDetailsManagement')(app);
+require('./routes/api/PaymentDetailManage')(app);
+require('./routes/api/DeliveryManagement')(app);
+require('./routes/api/UserDetailsManagement')(app);
 
 app.listen(PORT, function () {
     console.log("Server is Running on Port :" + PORT);
